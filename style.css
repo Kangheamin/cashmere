@@ -73,6 +73,7 @@ header .wrap .icon ul li a img{width: 24px;}
 #banner {height: 100vh;background-position: center;
      background-size: cover;
     animation: 20s slide infinite;
+    background-image: url(img/main_04.jpg),url(img/main_05.jpg), url(img/main_06.jpg),url(img/main_07.jpg),url(img/main_08.jpg);
     }
 @keyframes slide {
     0%{background-image: url(img/main_04.jpg);}
