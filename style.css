@@ -192,3 +192,8 @@ footer .wrap .cont .fticon ul li img{display: block; width: 30px; margin: 0 10px
 footer .wrap .cont .fticon ul li:last-child img{margin-right: 0;}
 footer .wrap .cont .fticon ul li:first-child img{margin-left: 0;}
 footer .wrap .address {text-align: center; font-size: 14px; padding: 20px 0;}
+
+:root {
+    --ti-cursor-margin-left:0.1em;
+}
+

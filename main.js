@@ -11,3 +11,7 @@ navbarMenu.addEventListener('click',(e)=>{
   scrollTo.scrollIntoView({behavior: "smooth", block:"end", inline:"nearest"});
 });
 
+new TypeIt('#title')
+.pause(1000)
+.go();
+
