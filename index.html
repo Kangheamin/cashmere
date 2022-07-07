@@ -4,232 +4,240 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/typeit@8.4.0/dist/index.umd.js"></script>
-    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-    <title>cashmere</title>
-    <link rel="icon" href="./img/favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <title>CASHMERE</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common_res.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index_res.css">
 </head>
 <body>
-    <header class="header">
+    <input type="radio" name="res_menu" id="open_menu">
+    <input type="radio" name="res_menu" id="close_menu">
+
+    <header>
+        <label for="open_menu"><img src="./img/menu.svg" alt=""></label>
+        <label for="close_menu"><img src="./img/close.svg" alt=""></label>
+
         <div class="wrap">
+            
             <div class="logo">
-                <img src="img/logo.png" alt="">
+                <a href="#"><img src="./img/logo.png" alt="cashmere logo"></a>
             </div>
-            <div class="menu">
+            <nav class="menu">
+                
                 <ul>
-                    <li><a data-link="#intro">INTRO</a></li>
-                    <li><a data-link="#story">STORY</a></li>
-                    <li><a data-link="#Joural">JOURNAL</a></li>
-                    <li><a  data-link="#Store">STORE</a></li>
+                    <li class="intro"><a href="#">Intro</a></li>
+                    <li class="story"><a href="#">Story</a></li>
+                    <li class="journal"><a href="#">Journal</a></li>
+                    <li class="stores"><a href="#">Stores</a></li>
                 </ul>
-            </div>
-            <div class="icon">
-               <ul>
-                   <li><a href=""><img src="img/fb_icon.png" alt="" onmouseover="this.src='img/fb_icon_hover.png'" onmouseout="this.src='img/fb_icon.png'"></a></li>
-                   <li class="insta"><a href=""><img src="img/insta_icon.png" alt="" onmouseover="this.src='img/insta_icon_hover.png'" onmouseout="this.src='img/insta_icon.png'"></a></li>
-                   <li class="youtube"><a href=""><img src="img/youtube_icon.png" alt="" onmouseover="this.src='img/youtube_icon_hover.png'" onmouseout="this.src='img/youtube_icon.png'"></a></li>
-               </ul>
+            </nav>
+            <div class="sns">
+                <ul>
+                    <li><a href="#" target="_blank"></a></li>
+                    <li><a href="#" target="_blank"></a></li>
+                    <li><a href="#" target="_blank"></a></li>
+                </ul>
             </div>
         </div>
     </header>
-    <main id="banner">
+
+    <section id="main">
+        <input type="radio" name="arrow" id="first_right">
+        <input type="radio" name="arrow" id="second_left">
+        <input type="radio" name="arrow" id="second_right">
+        <input type="radio" name="arrow" id="third_left">
+
+        <div class="slideWrap">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+        </div>
+        
+        <label class="arrow right" for="first_right"><img src="./img/arrow_right.png" alt=""></label>
+        <label class="arrow left" for="second_left"><img src="./img/arrow_left.png" alt=""></label>
+        <label class="arrow right" for="second_right"><img src="./img/arrow_right.png" alt=""></label>
+        <label class="arrow left" for="third_left"><img src="./img/arrow_left.png" alt=""></label>
+
         <div class="dark">
             <div class="wrap">
-                <h2 id="title">A stylish splurge for women</h2>
+                <h1 class="tit_font">A stylish splurge for women</h1>
             </div>
         </div>
-    </main>
-    <section class="main1">
-        <div class="bg">
-            <div id="intro">
-                <div class="wrap">
-                    <div class="title_part">
-                        <h3 class="font_Gv">Intro</h3>
-                    </div>
-                    <div class="cont">
-                        <div class="box">
-                            <h4>ANIMAL</h4>
-                            <div class="img_part"><div class="imge"></div></div>
-                            <p>cashmere values every life on this planet.
-                                 All our products are made from naturally-shed hair without harming the animals. We set our friends free at all times, providing them with high-quality grass only.</p>
-                        </div>
-                        <div class="box">
-                            <h4>LOCAL PRODUCTERS</h4>
-                            <div class="img_part"><div class="imge"></div></div>
-                            <p>cashmere believes in mutual growth with everyone engaged in our journey. We support our local producers’ economic independence through reliable buying practice and brand creation</p>
-                        </div>
-                        <div class="box">
-                            <h4>ENVIRCNMENT</h4>
-                            <div class="img_part"><div class="imge"></div></div>
-                            <p>cashmere cares foremost about our nature. From attentive pasture management to zerowaste technology, in every step of our process protecting environment is our top priority. Buy one le cashmere, adopt one tree.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </section>
 
-            <div id="story">
-                <div class="wrap">
-                    <div class="title_part">
-                        <h3 class="font_Gv">Story</h3>
+    <section id="cont_01">
+        <article>
+            <div class="title">
+                <h2 class="tit_font">Intro</h2>
+            </div>
+            <div class="content">
+                <div class="cont_box">
+                    <h3>ANIMAL</h3>
+                    <div class="img_cont"></div>
+                    <p>cashmere values every life on this planet. All our products are made from naturally-shed hair without harming the animals. We set our friends free at all times, providing them with high-quality grass only.</p>
+                </div>
+                <div class="cont_box">
+                    <h3>LOCAL PRODUCERS</h3>
+                    <div class="img_cont"></div>
+                    <p>cashmere believes in mutual growth with everyone engaged in our journey. We support our local producers’ economic independence through reliable buying practice and brand creation.</p>
+                </div>
+                <div class="cont_box">
+                    <h3>ENVIRONMENT</h3>
+                    <div class="img_cont"></div>
+                    <p>cashmere cares foremost about our nature. From attentive pasture management to zerowaste technology, in every step of our process protecting environment is our top priority. Buy one le cashmere, adopt one tree.</p>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="title">
+                <h2 class="tit_font">Story</h2>
+            </div>
+            <div class="content">
+                <div class="cont_box">
+                    <div class="img_cont"></div>
+                    <div class="txt_cont">
+                        <h3>Pure cotton that everyone is happy</h3>
+                        <p>In principle, fair trade aims to improve producers' lives and become independent by providing jobs to those who are socially and economically vulnerable and purchasing raw materials and products at an appropriate price. <br>
+                        When you make products with the right organic products rather than to support someone, the relationship of fair trade is naturally formed.</p>
                     </div>
-                    <div class="cont">
-                        <div class="box">
-                            <div class="imgBox">
-                                <div class="img"></div>
-                            </div>
-                            <div class="txt_Box">
-                                <h4>Pure cotton that everyone is happy</h4>
-                                <p>In principle, fair trade aims to improve producers' lives and become independent by providing jobs to those who are socially and economically vulnerable and purchasing raw materials and products at an appropriate price.When you make products with the right organic products rather than to support someone, the relationship of fair trade is naturally formed.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <div class="box">
-                            <div class="txt_Box">
-                                <h4>Precision in consideration of ecology</h4>
-                                <p>We produce products that reflect the most up-to-date information such as new construction methods, environmental changes, farmland environments, and the global trend of the organic movement. We believe that organic fabrics made through these efforts can be recognized for their precise and reliable quality.</p>
-                            </div>
-                            <div class="imgBox">
-                                <div class="img"></div>
-                            </div>
-                        </div>
+                </div>
+                <div class="cont_box">
+                    <div class="img_cont"></div>
+                    <div class="txt_cont">
+                        <h3>Precision in consideration of ecology</h3>
+                        <p>We produce products that reflect the most up-to-date information such as new construction methods, environmental changes, farmland environments, and the global trend of the organic movement. <br>
+                        We believe that organic fabrics made through these efforts can be recognized for their precise and reliable quality.</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     </section>
-    <section class="middle_banner">
-    <div class="dark">
-        <div class="wrap">
-            <div class="banner_cont">
-                <h3 class="font_Gv">Trendy Look</h3>
-                <h4>Trendy style and soft touch</h4>
-                <div class="shop"><a>SHOP</a><div class="white_cover"></div></div>
+
+    <section id="banner">
+        <div class="dark">
+            <div class="cont_center">
+                <h2 class="tit_font">Trendy Look</h2>
+                <p>Trendy style and soft touch</p>
+                <a href=""><span>SHOP</span></a>
             </div>
         </div>
-    </div>
     </section>
-    <section class="main2">
-        <div class="bg">
-            <div id="Joural">
-                <div class="wrap">
-                    <div class="title_part">
-                        <h3 class="font_Gv">Joural</h3>
-                    </div>
-                    <div class="cont">
-                        <div class="box">
-                            <div class="img_part"><img src="img/tab1.png" alt=""></div>
-                            <h3>NATURE</h3>
-                            <div class="txt_part">
-                            <h4>WHERE WE WISH TO RETURN</h4>
+
+    <section id="cont_02">
+        <article>
+            <div class="title">
+                <h2 class="tit_font">Journal</h2>
+            </div>
+            <div class="content">
+                <div class="cont_box">
+                    <div class="img_cont"></div>
+                    <div class="txt_cont">
+                        <h3>Nature</h3>
+                        <h4>WHERE WE WISH TO RETURN</h4>
+                        <div class="detail">
                             <p>Cashmere goats : 100% pasture-raised</p>
                             <p>The total area of pasture management: 10ha</p>
                             <p>The number of trees planted today: 5,000 trees</p>
                         </div>
+                    </div>
+                </div>
+                <div class="cont_box">
+                    <div class="img_cont"></div>
+                    <div class="txt_cont">
+                        <h3>Nature</h3>
+                        <h4>WHERE WE WISH TO RETURN</h4>
+                        <div class="detail">
+                            <p>Cashmere goats : 100% pasture-raised</p>
+                            <p>The total area of pasture management: 10ha</p>
+                            <p>The number of trees planted today: 5,000 trees</p>
                         </div>
-                        <div class="box">
-                            <div class="img_part"><img src="img/tab2.png" alt=""></div>
-                            <h3>MATERIALS</h3>
-                            <div class="txt_part">
-                            <h4>WQUALITY, NOT QUANTITY</h4>
-                            <p>Finer than 15μm, longer than 41mm naturally-shed hair</p>
-                            <p>292 local herder families benefited from cashmere's reliable buying practice</p>
-                            <p>Asia Development Bank Certified ‘Noble Fibre Trademark’</p>
+                    </div>
+                </div>
+                <div class="cont_box">
+                    <div class="img_cont"></div>
+                    <div class="txt_cont">
+                        <h3>Nature</h3>
+                        <h4>WHERE WE WISH TO RETURN</h4>
+                        <div class="detail">
+                            <p>Cashmere goats : 100% pasture-raised</p>
+                            <p>The total area of pasture management: 10ha</p>
+                            <p>The number of trees planted today: 5,000 trees</p>
                         </div>
-                        </div>
-                        <div class="box">
-                            <div class="img_part"><img src="img/tab3.png" alt=""></div>
-                            <h3>YARN & FABRIC</h3>
-                            <div class="txt_part">
-                            <h4>CRAFTING AUTHENTICITY</h4>
-                            <p>GOTS (Global Organic Textile Standard) Certified OEKO-TEX Standard 100 Certified Standard 100 Certified</p>
-                            <p>Sustainable Fibre Alliance Member</p>
-                            <p>In over 1,300 different colors</p>
-                        </div>
-                        </div>
-                        <div class="box">
-                            <div class="img_part"><img src="img/tab4.png" alt=""></div>
-                            <h3>PRODUCTS</h3>
-                            <div class="txt_part">
-                            <h4>MINIMAL, AND YET ENRICHING</h4>
-                            <p>Research-based fabric production - safe for all sensitive skins (baby wearable)</p>
-                            <p>woven in crafsmanship</p>
-                            <p>Zero-Waste Technology (whole-garment knitwear)</p>
-                        </div>
+                    </div>
+                </div>
+                <div class="cont_box">
+                    <div class="img_cont"></div>
+                    <div class="txt_cont">
+                        <h3>Nature</h3>
+                        <h4>WHERE WE WISH TO RETURN</h4>
+                        <div class="detail">
+                            <p>Cashmere goats : 100% pasture-raised</p>
+                            <p>The total area of pasture management: 10ha</p>
+                            <p>The number of trees planted today: 5,000 trees</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="Store">
-                <div class="wrap">
-                    <div class="title_part">
-                        <h3 class="font_Gv">Store</h3>
-                    </div>
-                    <div class="cont">
-                        <div class="box box_long">
-                            <div class="img_box">
-                            </div>
-                            <button>WOMEN</button>
-                        </div>
-                        <div class="box box_short">
-                            <div class="img_box">
-                            </div>
-                            <button>MEN</button>
-                        </div>
-                        <div class="box box_secondshort">
-                            <div class="img_box">
-                            </div>
-                            <button>KIDS</button>
-                        </div>
-                    </div>
+        </article>
+
+        <article>
+            <div class="title">
+                <h2 class="tit_font">Store</h2>
+            </div>
+            <div class="content">
+                <div class="cont_box">
+                    <div class="store_bg"></div>
+                    <a href="">women</a>
+                </div>
+                <div class="cont_box">
+                    <div class="store_bg"></div>
+                    <a href="">men</a>
+                </div>
+                <div class="cont_box">
+                    <div class="store_bg"></div>
+                    <a href="">kids</a>
                 </div>
             </div>
-        </div>
+
+        </article>
     </section>
-    <div class="map">
-        <div id="map"></div>
-        <div id="img_map"></div>
-    </div>
+
 
     <footer>
-    <div class="wrap">
-        <div class="cont">
-            <div class="ftlogo"><img src="img/footer_logo.jpg" alt=""></div>
-            <div class="ftmenu">
-                <ul>
-                    <li><a href="">NEWS & NOTICE</a></li>
-                    <li><a href="">PRIVACY</a></li>
-                    <li><a href="">presentive@cashmere.com</a></li>
-                    <li><a href="">+82 2 588 0880</a></li>
-                </ul>
+        <div class="wrap">
+            <div class="f_main">
+
+                <div class="f_logo">
+                    <img src="./img/footer_logo.jpg" alt="footer logo">
+                </div>
+                
+                <div class="f_info">
+                    <ul class="fMenu_pc">
+                        <li><a href="#">NEWS & NOTICE</a></li>
+                        <li><a href="#">PRIVACY</a></li>
+                        <li><a href="mailto:presentive@cashmere.com">presentive@cashmere.com</a></li>
+                        <li><a href="tel:008225880880">+82 2 588 0880</a></li>
+                    </ul>
+                </div>
+                <div class="f_sns">
+                    <ul>
+                        <li><a href="#" target="_blank"></a></li>
+                        <li><a href="#" target="_blank"></a></li>
+                        <li><a href="#" target="_blank"></a></li>
+                    </ul>
+                </div>
+
             </div>
-            <div class="fticon">
-                <ul>
-                    <li><img src="img/fb_icon.png" alt="" onmouseover="this.src='img/fb_icon_hover.png'" onmouseout="this.src='img/fb_icon.png'"></li>
-                    <li><img src="img/insta_icon.png" alt="" onmouseover="this.src='img/insta_icon_hover.png'" onmouseout="this.src='img/insta_icon.png'"></li>
-                    <li><img src="img/youtube_icon.png" alt="" onmouseover="this.src='img/youtube_icon_hover.png'" onmouseout="this.src='img/youtube_icon.png'"></li>
-                </ul>
-            </div>
+            <p class="copyrights">COPYRIGHTS ⓒ CASHMERE.LTD. ALL RIGHTS RESERVED.</p>
         </div>
-        <div class="address">COPYRIGHTS ⓒ CASHMERE.LTD. ALL RIGHTS RESERVED.</div>
-    </div>
     </footer>
 
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMOwJdqgkxI6MQb4E95pSSBF1TABF5pZA&callback=initMap"></script>
-    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs0f1jRgqGpm31rMjDb7JLfmeay-qOK3A&callback=initMap"></script> -->
-    <script>
-        function initMap() { 
-            var uluru = {lat: 51.519987, lng: -0.156517}; //lat(latitude, 위도), lng(longitude, 경도)
-            var map = new google.maps.Map(document.getElementById('map'), { 
-                zoom: 18, 
-                center: uluru 
-            }); 
-            var marker = new google.maps.Marker({ position: uluru, map: map }); 
-        }
-    </script>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+
+
 </body>
 </html>
